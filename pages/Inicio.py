@@ -14,7 +14,7 @@ from components.maps.mapsample import mapsample
 from pages.Tablas import tablacartera
 
 data = df_carteraCombinada
-tipoCLiente =  data['Nom tipoCliente'].value_counts()
+tipoCLiente =  data['Nom tipoCliente'].value_counts().nunique()
 
 #el valor de la cartera vencida total
 
